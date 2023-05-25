@@ -1,0 +1,22 @@
+.me-auto{
+    color:#896532 !important;
+    background-image:url("https://cdn.outsideonline.com/wp-content/uploads/2021/06/15/camping_fun_s.jpg");
+    area-hidden:true;
+    font-size: 25px;
+    margin-left: 10%; 
+    /*position: fixed; /* ou position: absolute; */
+    /*width: 500%;*/
+    ; /* ou ajustez la valeur selon vos besoins */
+    left: 100px;
+    /* autres styles */}
+    .title{
+        position: fixed; /* ou position: absolute; */
+    background-color: null;
+    font-size: 22px;
+
+        top:3; /* ou ajustez la valeur selon vos besoins */
+        left: 0;color:#facb00 !important;
+    height:5px;
+    }
+    .n{width: 100%;}
+    
