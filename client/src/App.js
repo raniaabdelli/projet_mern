@@ -3,7 +3,6 @@ import "./App.css";
 import Contact from "../src/pages/Contact";
 import Panier from "../src/pages/Panier";
 import Catégories from "../src/pages/Catégories";
-import Accueil from "./pages/Accueil";
 //import PersonList from "./components/PersonList";
 import { Route, Routes } from "react-router-dom";
 import { useEffect } from "react";
@@ -14,6 +13,7 @@ import Footer from "./pages/Footer";
 import Blog from "./pages/Blog";
 import Connexion from "./pages/Connexion";
 import Qsn from "./pages/Qsn";
+import GetPersonList from "./pages/GetPersonList";
 function App() {
  
   const persons = useSelector((state) => state.personReducer);
@@ -40,13 +40,14 @@ function App() {
     ><NavBar/>
       <Routes>
         <Route path="/add" element={<AddPerson />} />
-        <Route path="/" element={<Accueil />} />
+        
         <Route path="/Catégories" element={<Catégories />} />
         <Route path="/Panier" element={<Panier />} />
         <Route path="/Contact" element={<Contact />} />
-        <Route path="/AddPerson" element={<AddPerson />} />        <Route path="/Connexion" element={<Connexion />} />
+        <Route path="/AddPerson" element={<AddPerson />} />    
+            <Route path="/Connexion" element={<Connexion />} />
         <Route path="/Qsn" element={<Qsn/>} />
-
+        <Route path="/GetPersonList" element={<GetPersonList/>} />
 
       </Routes>
       
